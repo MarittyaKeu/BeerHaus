@@ -21,6 +21,7 @@ public class BeerController {
     @Inject
     BeerService beerService;
 
+    //test
     @RequestMapping(path = "/{id}", method = RequestMethod.GET)
     public Beer getBeerById(@PathVariable int id) {
         return beerService.getBeerById(id);
