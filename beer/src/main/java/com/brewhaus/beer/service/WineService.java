@@ -14,7 +14,7 @@ public class WineService {
 
     @Inject
     WineRepository repo;
-//teset
+
     public List<Wine> getAllWine(){ return repo.findAll();}
     public Wine getWineById(int id) {
         return repo.getWineById(id);
