@@ -56,6 +56,7 @@ public class BeerController {
 
     @RequestMapping(path = "/addBeer", method = RequestMethod.POST)
     public Beer addBeer(@RequestBody Beer beer) {
+        System.out.print("add beer");
         return beerService.addBeer(beer);
     }
 

@@ -43,7 +43,7 @@ public class Wine {
         return this.alcoholByVolume;
     }
     public String getPicture(){return this.picture;}
-    public Date getDate(){return this.time;}
+    public Date getTime(){return this.time;}
     public String getDescription(){return this.description;}
 
 
