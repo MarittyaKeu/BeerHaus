@@ -18,13 +18,17 @@ class SimpleReactFileUpload extends React.Component {
       console.log(response.data);
     })
   }
+
+
   onChange(e) {
     this.setState({file:e.target.files[0]})
   }
+
+  
   fileUpload(file){
     const url = 'http://example.com/file-upload';
     const formData = new FormData();
-    formData.append('file',file)
+    formData.append('file',file);
     const config = {
         headers: {
             'content-type': 'multipart/form-data'

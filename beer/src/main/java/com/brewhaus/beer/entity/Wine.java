@@ -13,12 +13,12 @@ public class Wine {
     private int id;
     private String name;
     private String wineType;
-    private String alcoholByVolume;
+    private float alcoholByVolume;
     private String picture;
     private Date time;
     private String description;
 
-    public Wine(int id, String name, String wineType, String alcoholByVolume, String picture, String description, Date time) {
+    public Wine(int id, String name, String wineType, float alcoholByVolume, String picture, String description, Date time) {
         this.id = id;
         this.name = name;
         this.wineType = wineType;
@@ -39,7 +39,7 @@ public class Wine {
     public String getWineType() {
         return this.wineType;
     }
-    public String getAlcoholByVolume() {
+    public float getAlcoholByVolume() {
         return this.alcoholByVolume;
     }
     public String getPicture(){return this.picture;}
@@ -56,7 +56,7 @@ public class Wine {
     public void setWineType(String wineType) {
         this.wineType = wineType;
     }
-    public void setAlcoholByVolume(String alcoholByVolume) {
+    public void setAlcoholByVolume(float alcoholByVolume) {
         this.alcoholByVolume = alcoholByVolume;
     }
     public void setPicture(String picture){this.picture = picture;}

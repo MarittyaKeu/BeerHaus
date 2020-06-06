@@ -8,7 +8,7 @@ function Main(){
             {/* <Product props={[]}/> */}
             <a href="/beers/getAllBeers" className="alcohol">Beers</a>
             <a href="/wines/getAllwines" className="alcohol">Wines</a>
-
+            {/* <a href="/create" className="alcohol">Add a product</a> */}
         </div>
     )
 }

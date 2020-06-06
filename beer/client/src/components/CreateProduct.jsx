@@ -1,6 +1,6 @@
 import React, {useState, Fragment} from 'react';
 import Form from './Form';
-
+import axios from 'axios';
 
 
 function CreateProduct(){
@@ -22,8 +22,20 @@ function CreateProduct(){
     }
 
     const fileUpload = () => {
-        const url = '/wines/getAllWines';
-        
+        const config ={
+            headers: {
+                'content-type':'multipart/form-data'
+            }
+        }
+        if (formData.type == 'wine'){
+            const url = '/wines/addWine';
+          
+            axios.post(url,JSON.stringify(formData), config);
+        }else{
+            const url = '/beers/addBeer';
+            axios.post(url,JSON.stringify(formData), config);
+
+        }
     }
 
 
